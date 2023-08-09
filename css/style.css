@@ -26,6 +26,7 @@ header{
     align-content: center;
     min-height: 70px;
     align-items: center;
+    z-index: 100;
 }
 
 .logo{
@@ -48,7 +49,7 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     margin: 5px;
-    padding: 15px;
+    padding: 5px;
     text-decoration: none;
 }
 header nav ul li a {
@@ -57,19 +58,12 @@ header nav ul li a {
     text-decoration: none;
     padding: 5px;
     font-family: 'Poppins', sans-serif;   
-    
+    border-radius: 12px;
 }
 header nav ul li a:hover{
   color: black;
 }
-@media (max-width:700px){
-    header{
-      flex-direction: column;
-    }
-    nav{
-      padding: 10px 0px;
-    }
-}
+
   /* ------ MAIN ------- */
 main{
   background-color: rgb(248, 161, 0);
@@ -110,37 +104,7 @@ main{
 .item-galeria:nth-child(2){
   grid-column-start: span 2;
 }
-@media (min-width:800px) {
-  .contenedor-galeria{
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .item-galeria:nth-child(6){
-    grid-row-start: span 2;
-  }
-  .item-galeria:nth-child(9){
-    grid-row-start: span 2;
-  }
-}
-@media (min-width:1024px) {
-  .contenedor-galeria{
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .item-galeria:nth-child(1){
-    grid-column-start: span 3;
-  }
-  .item-galeria:nth-child(8){
-    grid-column-start: span 3;
-  }
-  .item-galeria:nth-child(4){
-    grid-row-start: span 2;
-  }
-  .item-galeria:nth-child(5){
-    grid-row-start: span 2;
-  }
-  .item-galeria:nth-child(9){
-    grid-column-start: span 2;
-  }
-}
+
 .presentacion{
   margin: 0 auto;
   width: 40%;
@@ -162,18 +126,43 @@ main{
 .hero h2{
   display: inline-block;
   font-size: 70px;
-  border:5px red solid; 
+  border:5px; 
   padding: 15px;
+  animation: izquierda-derecha 2s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes izquierda-derecha{
+  from{
+    transform: translateX(-1200px);
+  }
+  to{
+    transform: translateX(0px);
+  }
 }
 .hero a{
   text-decoration: none;
   color: white;
-  background-color: rgb(107, 3, 107);
-  padding: 5px;
+  background-color: red;
+  padding: 16px 32px;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
 }
 .hero p{
   font-size: 30px;
   margin-bottom: 10px;
+  animation: derecha-izquierda 2s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes derecha-izquierda{
+  from{
+    transform: translateX(1200px);
+  }
+  to{
+    transform: translateX(0px);
+  }
 }
 .carousel-inner{
   padding: 150px;
@@ -266,4 +255,43 @@ footer div img{
     height: 50px;
     margin: 0 auto;
 
+}
+@media (min-width:800px) {
+  .contenedor-galeria{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .item-galeria:nth-child(6){
+    grid-row-start: span 2;
+  }
+  .item-galeria:nth-child(9){
+    grid-row-start: span 2;
+  }
+}
+@media (min-width:1024px) {
+  .contenedor-galeria{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .item-galeria:nth-child(1){
+    grid-column-start: span 3;
+  }
+  .item-galeria:nth-child(8){
+    grid-column-start: span 3;
+  }
+  .item-galeria:nth-child(4){
+    grid-row-start: span 2;
+  }
+  .item-galeria:nth-child(5){
+    grid-row-start: span 2;
+  }
+  .item-galeria:nth-child(9){
+    grid-column-start: span 2;
+  }
+}
+@media (max-width:700px){
+    header{
+      flex-direction: column;
+    }
+    nav{
+      padding: 10px 0px;
+    }
 }
