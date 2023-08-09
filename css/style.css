@@ -153,16 +153,8 @@ main{
 .hero p{
   font-size: 30px;
   margin-bottom: 10px;
-  animation: derecha-izquierda 2s 1;
+  animation: izquierda-derecha 2s 1;
   animation-fill-mode: forwards;
-}
-@keyframes derecha-izquierda{
-  from{
-    transform: translateX(1200px);
-  }
-  to{
-    transform: translateX(0px);
-  }
 }
 .carousel-inner{
   padding: 150px;
