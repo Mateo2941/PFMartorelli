@@ -1,15 +1,9 @@
 header{
-    background-color: rgb(248, 161, 0);
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    min-height: 70px;
-    align-items: center;
-    z-index: 100;
-
+background-color: #f8a100;
+.navbar-toggler-icon{
+    background-color: black;
+    border-radius: 20px;
+}
 .logo{
   display: flex;
 }
@@ -25,19 +19,18 @@ header{
             display: flex;
             justify-content: space-between;
             align-content: center;
-            li{
+            .nav-item{             
                 display: inline-block;
                 margin: 5px;
                 padding: 5px;
                 text-decoration: none;
-                a{
-                    background-color:red;
-                    color: aliceblue;
-                    text-decoration: none;
-                    padding: 5px;
-                    font-family: 'Poppins', sans-serif; 
-                    border-radius: 12px;  
-                    :hover{
+                background-color:red;
+                color: aliceblue;
+                text-decoration: none;
+                padding: 5px;
+                font-family: 'Poppins', sans-serif; 
+                border-radius: 12px;  
+                :hover{
                         color: black;
                     }
                 }
@@ -46,5 +39,4 @@ header{
 
         }
 
-    }
 }

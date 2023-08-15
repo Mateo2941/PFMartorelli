@@ -1,3 +1,25 @@
-%flex{
-    
+$colorUno: #f8a100;
+$colorDos: red;
+header{
+    background-color: $colorUno;
+}
+main{
+    background-color: $colorDos;
+}
+footer{
+    background-color: $colorUno;
+}
+
+@mixin flex ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
+.producto h2{
+    @include flex (flex, center) 
+}
+.envios h2{
+    @include flex(flex, center)
+}
+.envios h3{
+    @include flex(flex, center)
 }

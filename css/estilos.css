@@ -6,16 +6,31 @@
   box-sizing: border-box; }
 
 header {
-  background-color: #f8a100;
-  padding: 15px;
-  position: sticky;
-  top: 0;
+  background-color: #f8a100; }
+
+main {
+  background-color: red; }
+
+footer {
+  background-color: #f8a100; }
+
+.producto h2 {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  min-height: 70px;
-  align-items: center;
-  z-index: 100; }
+  justify-content: center; }
+
+.envios h2 {
+  display: flex;
+  justify-content: center; }
+
+.envios h3 {
+  display: flex;
+  justify-content: center; }
+
+header {
+  background-color: #f8a100; }
+  header .navbar-toggler-icon {
+    background-color: black;
+    border-radius: 20px; }
   header .logo {
     display: flex; }
   header .logo-img {
@@ -29,23 +44,22 @@ header {
       display: flex;
       justify-content: space-between;
       align-content: center; }
-      header nav ul li {
+      header nav ul .nav-item {
         display: inline-block;
         margin: 5px;
         padding: 5px;
-        text-decoration: none; }
-        header nav ul li a {
-          background-color: red;
-          color: aliceblue;
-          text-decoration: none;
-          padding: 5px;
-          font-family: 'Poppins', sans-serif;
-          border-radius: 12px; }
-          header nav ul li a :hover {
-            color: black; }
+        text-decoration: none;
+        background-color: red;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 12px; }
+        header nav ul .nav-item :hover {
+          color: black; }
 
 main {
-  background-color: #f8a100; }
+  background-color: red; }
   main .bienvenidos {
     font-family: 'Poppins', sans-serif; }
     main .bienvenidos h1 {
@@ -89,7 +103,8 @@ main {
     color: #f8a100;
     text-align: center;
     font-family: 'Poppins', sans-serif; }
-    main .hero h2 {
+    main .hero img {
+      height: 300px;
       display: inline-block;
       font-size: 70px;
       border: 5px;
@@ -178,7 +193,7 @@ main {
     transform: translateX(0px); } }
 
 footer {
-  background-color: brown;
+  background-color: #f8a100;
   font-family: 'Poppins', sans-serif;
   align-items: center; }
   footer h2 {
