@@ -2,9 +2,10 @@
 /* class */
 /*padding= espacio entre elemento y los bordes
 margin= espacio hacia afuera*/
-/*selector es para casos especificos y class es para mas algo mas especifico*/
+/*selector es para casos especificos y class es para algo mas especifico*/
   /* # el ID es para javascript */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&family=Yellowtail&display=swap');
   /* RESET */ 
 
 *{
@@ -56,16 +57,27 @@ main{
   font-family: 'Poppins', sans-serif;
 }
 .bienvenidos h2{
-  font-family: 'Poppins', sans-serif;
-  justify-content: center;
+  font-family: 'Yellowtail', cursive;
   display: flex;
+  justify-content: center;
+  background-color: #f8a100;
+  border-radius: 65px;
+  padding: 16px 32px;
+  font-size: 50px;
 }
 .bienvenidos div h3{
-  justify-content: center;
-  display: flex;
+  text-align: center;
+  padding: 50px;
 }
 .bienvenidos div h1{
+  font-family: 'Yellowtail', cursive;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f8a100;
+  border-radius: 65px;
+  padding: 16px 32px;
+  font-size: 38px;
 }
 .contenedor-galeria{
   display: grid;
@@ -105,7 +117,7 @@ main{
     background-attachment: fixed;
     color: rgb(248, 161, 0);
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Yellowtail', cursive;
 }
 .hero img{
   height: 300px;
@@ -152,12 +164,18 @@ main{
   font-family: 'Poppins', sans-serif;
 }
 .producto h2{
+  font-family: 'Yellowtail', cursive;
   display: flex;
   justify-content: center;
+  background-color: #f8a100;
+  border-radius: 65px;
+  padding: 16px 32px;
+  font-size: 38px;
 }
 .producto h3{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .producto div{
   width: 250px;
@@ -203,12 +221,17 @@ main{
   font-family: 'Poppins', sans-serif;
 }
 .envios h2{
+  font-family: 'Yellowtail', cursive;
   display: flex;
   justify-content: center;
+  background-color: #f8a100;
+  border-radius: 65px;
+  padding: 16px 32px;
+  font-size: 38px;
 }
 .envios div h3{
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  padding: 50px;
 }
 .mapa{
   margin: 0 auto;
@@ -219,7 +242,7 @@ main{
   /* ------ FOOTER ---- */
 footer{
     background-color: #f8a100;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Yellowtail', cursive;
     align-items: center;
     
 }
@@ -264,11 +287,11 @@ footer div img{
     grid-column-start: span 2;
   }
 }
-@media (max-width:700px){
-    header{
-      flex-direction: column;
-    }
-    nav{
-      padding: 10px 0px;
-    }
+@media (max-width:880px){
+  .hero{
+    flex-direction: column;
+  }
+  .producto{
+    flex-direction: column;
+  }
 }

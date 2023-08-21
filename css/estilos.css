@@ -15,6 +15,18 @@ footer {
   background-color: #f8a100; }
 
 .producto h2 {
+  background-color: #f8a100; }
+
+.envios h2 {
+  background-color: #f8a100; }
+
+.bienvenidos div h1 {
+  background-color: #f8a100; }
+
+.bienvenidos h2 {
+  background-color: #f8a100; }
+
+.producto h2 {
   display: flex;
   justify-content: center; }
 
@@ -22,9 +34,13 @@ footer {
   display: flex;
   justify-content: center; }
 
-.envios h3 {
-  display: flex;
-  justify-content: center; }
+.envios div h3 {
+  text-align: center;
+  padding: 50px; }
+
+.bienvenidos div h3 {
+  text-align: center;
+  padding: 50px; }
 
 header {
   background-color: #f8a100; }
@@ -63,128 +79,161 @@ main {
   main .bienvenidos {
     font-family: 'Poppins', sans-serif; }
     main .bienvenidos h1 {
-      text-align: center; }
-    main .bienvenidos h2 {
-      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      display: flex;
       justify-content: center;
-      display: flex; }
-    main .bienvenidos h3 {
-      justify-content: center;
-      display: flex; }
-  main .contenedor-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    padding: 20px;
-    grid-gap: 10px; }
-  main .img-galeria {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  main .item-galeria:nth-child(3) {
-    grid-row-start: span 2; }
-  main .item-galeria:nth-child(7) {
-    grid-row-start: span 2; }
-  main .item-galeria:nth-child(2) {
-    grid-column-start: span 2; }
-  main .presentacion {
-    margin: 0 auto;
-    width: 40%;
-    display: block;
-    text-align: center; }
-  main .hero {
-    width: 100%;
-    height: calc(100vh - 130px);
-    background-image: url(../img/fondo.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #f8a100;
-    text-align: center;
-    font-family: 'Poppins', sans-serif; }
-    main .hero img {
-      height: 300px;
-      display: inline-block;
-      font-size: 70px;
-      border: 5px;
-      padding: 15px;
-      animation: izquierda-derecha 2s 1;
-      animation-fill-mode: forwards; }
-  main a {
-    text-decoration: none;
-    color: white;
-    background-color: red;
-    padding: 16px 32px;
-    cursor: pointer;
-    border: none;
-    font-size: 24px;
-    font-weight: bold;
+      background-color: #f8a100;
+      border-radius: 65px;
+      padding: 16px 32px;
+      font-size: 38px; }
+  main h2 {
+    font-family: 'Yellowtail', cursive;
+    justify-content: center;
+    display: flex;
+    background-color: #f8a100;
     border-radius: 12px; }
-  main p {
-    font-size: 30px;
-    margin-bottom: 10px;
+  main h3 {
+    justify-content: center;
+    display: flex; }
+
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  padding: 20px;
+  grid-gap: 10px; }
+
+.img-galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.item-galeria:nth-child(3) {
+  grid-row-start: span 2; }
+
+.item-galeria:nth-child(7) {
+  grid-row-start: span 2; }
+
+.item-galeria:nth-child(2) {
+  grid-column-start: span 2; }
+
+.presentacion {
+  margin: 0 auto;
+  width: 40%;
+  display: block;
+  text-align: center; }
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 130px);
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f8a100;
+  text-align: center;
+  font-family: 'Yellowtail', cursive; }
+  .hero img {
+    height: 300px;
+    display: inline-block;
+    font-size: 70px;
+    border: 5px;
+    padding: 15px;
     animation: izquierda-derecha 2s 1;
     animation-fill-mode: forwards; }
-  main .carousel-inner {
-    padding: 150px; }
-  main .carousel-inner img {
-    width: 100%;
-    height: 100%; }
-  main .producto {
-    font-family: 'Poppins', sans-serif; }
-    main .producto h2 {
-      display: flex;
-      justify-content: center; }
-    main .producto h3 {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 25px;
-      background-color: black; }
-    main .producto div {
-      width: 250px;
-      height: 350px;
-      border: 2px solid black;
-      text-align: center;
-      background-color: red;
-      color: white;
-      margin: 20px;
-      display: inline-block;
-      font-family: 'Poppins', sans-serif;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      align-items: center; }
-    main .producto img {
-      width: 250px;
-      height: 200px; }
-  main .boton {
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 16px 32px;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px; }
+
+p {
+  font-size: 30px;
+  margin-bottom: 10px;
+  animation: izquierda-derecha 2s 1;
+  animation-fill-mode: forwards; }
+
+.carousel-inner {
+  padding: 150px; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+.producto {
+  font-family: 'Yellowtail', cursive; }
+  .producto h2 {
+    display: flex;
+    justify-content: center;
     background-color: #f8a100;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 10px; }
-  main .boton:hover {
-    color: black; }
-  main .botonc {
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin: 5px;
-    padding: 5px;
+    border-radius: 65px;
+    padding: 16px 32px;
+    font-size: 38px; }
+  .producto h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    background-color: black; }
+  .producto div {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: red;
     color: white;
-    background-color: #f8a100; }
-  main .envios {
-    font-family: 'Poppins', sans-serif; }
-    main .envios h2 {
-      display: flex;
-      justify-content: center; }
-    main .envios h3 {
-      display: flex;
-      justify-content: center; }
-  main .mapa {
-    margin: 0 auto;
-    width: 40%;
-    display: block;
-    text-align: center; }
+    margin: 20px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    align-items: center; }
+  .producto img {
+    width: 250px;
+    height: 200px; }
+
+.boton {
+  background-color: #f8a100;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px; }
+
+.boton:hover {
+  color: black; }
+
+.botonc {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: #f8a100; }
+
+.envios {
+  font-family: 'Yellowtail', cursive; }
+  .envios h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #f8a100;
+    border-radius: 65px;
+    padding: 16px 32px;
+    font-size: 38px; }
+  .envios h3 {
+    display: flex;
+    justify-content: center; }
+
+.mapa {
+  margin: 0 auto;
+  width: 40%;
+  display: block;
+  text-align: center; }
 
 @keyframes izquierda-derecha {
   from {
@@ -194,7 +243,7 @@ main {
 
 footer {
   background-color: #f8a100;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Yellowtail', cursive;
   align-items: center; }
   footer h2 {
     display: flex;
@@ -226,8 +275,6 @@ footer {
   .item-galeria:nth-child(9) {
     grid-column-start: span 2; } }
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: column; }
-  header nav {
-    padding: 10px 0px; } }
+@media (max-width: 880px) {
+  .hero {
+    flex-direction: column; } }

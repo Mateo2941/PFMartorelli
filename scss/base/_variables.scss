@@ -9,7 +9,22 @@ main{
 footer{
     background-color: $colorUno;
 }
-
+.producto h2{
+    background-color: $colorUno;
+}
+.envios h2{
+    background-color: $colorUno;
+}
+.bienvenidos div h1{
+    background-color: $colorUno;
+}
+.bienvenidos h2{
+    background-color: $colorUno;
+}
+@mixin center ($center){
+    text-align: $center;
+    padding: 50px;
+}
 @mixin flex ($flex, $justify){
     display: $flex;
     justify-content: $justify;
@@ -20,6 +35,9 @@ footer{
 .envios h2{
     @include flex(flex, center)
 }
-.envios h3{
-    @include flex(flex, center)
+.envios div h3{
+    @include center(center)
+}
+.bienvenidos div h3{
+    @include center(center)
 }
